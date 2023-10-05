@@ -7,7 +7,8 @@
 4. `git checkout -b <new_branch>` Replace `<new_branch>` with a branch that you would name, include your name.
 git push origin <new_branch>
 5. To start server: npm start
-6. After adding changes:
+6. BEFORE YOU MAKE ANY CHANGES, DO `git pull`
+7. After adding changes:
    1. `git add .`
    2. `git commit -m "A good commit message describing what you changed"`
    3. `git push` or `git push origin main`
