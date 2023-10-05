@@ -2,6 +2,8 @@ import logo from './logo.svg';
 // import { Link } from "react-router-dom";
 import SocialFollow from "./SocialFollow"
 import './App.css';
+import main from "./main";
+
 
 function App() {
   return (
@@ -12,8 +14,19 @@ function App() {
         </h1>
         <SocialFollow />
       </header>
-    </div>
-  );
-}
 
+      <body>
+        <div>
+          <main />
+        </div>
+      </body>
+
+
+
+
+    </div>
+
+  );
+
+}
 export default App;
