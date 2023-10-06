@@ -1,5 +1,5 @@
 .social-container {
-  padding: 25px 50px;
+  padding: 0px 1px;
 }
 
 a.social {
@@ -14,14 +14,6 @@ a.social:hover {
 
 a.whatsapp {
   color: #4FCE5D;
-}
-
-a.facebook {
-  color: #4968ad;
-}
-
-a.twitter {
-  color: #49a1eb;
 }
 
 a.instagram {

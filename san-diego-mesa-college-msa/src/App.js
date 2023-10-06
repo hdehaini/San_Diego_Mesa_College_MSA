@@ -1,41 +1,42 @@
 import logo from './logo.svg';
 import SocialFollow from "./SocialFollow"
 import './App.css';
-import main from "./components/main";
 import React from 'react';
-import mesvid from './assets/mesvid.mp4'
-
+import Main from './components/main';
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <video src={mesvid} />
-        <h1>
-          San Diego Mesa Community College MSA
 
-        </h1>
-        <SocialFollow />
-        <video src={mesvid} />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-
-
-
+      <section class="showcase">
+        <header>
+          <h2 class="logo"> Mesa MSA</h2>
+          <div class="toggle"></div>
+        </header>
+        <div>
+          <Main />
+        </div>
+        <div class="overlay"></div>
+        <div class="text">
+          <h2>  San Diego Mesa  </h2>
+          <h3>College MSA</h3>
+          <p>Description</p>
+          <a href="#"> About Us</a>
+        </div>
+        <ul class="social">
+          <SocialFollow />
+        </ul>
+      </section>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </div>
-
-  );
-
-};
+  )
+}
 export default App;
