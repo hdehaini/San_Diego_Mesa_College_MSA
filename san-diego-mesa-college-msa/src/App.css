@@ -90,6 +90,8 @@ header .logo {
 .text {
   position: absolute;
   z-index: 10;
+
+
 }
 
 .text h2 {
@@ -137,6 +139,7 @@ header .logo {
 }
 
 .social {
+  margin-left: auto !important;
   z-index: 100;
   bottom: 100px;
   display: inline-block;
@@ -186,7 +189,7 @@ header .logo {
 }
 
 .menu ul li a:hover {
-  color: #CD7F32;
+  color: #ffffff;
 }
 
 @media (max-width: 991px) {

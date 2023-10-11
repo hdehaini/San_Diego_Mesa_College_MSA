@@ -2,8 +2,6 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faWhatsapp,
-  faFacebook,
-  faTwitter,
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 import "./SocialFollow.css";

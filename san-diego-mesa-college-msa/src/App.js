@@ -1,17 +1,37 @@
-import logo from './logo.svg';
-import SocialFollow from "./SocialFollow"
+
+import React, { useEffect } from 'react';
 import './App.css';
-import React from 'react';
 import Main from './components/main';
-import './menutoggle'
+import SocialFollow from './SocialFollow';
+
 
 function App() {
+  useEffect(() => {
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    const toggleMenu = () => {
+      menuToggle.classList.toggle('active');
+      showcase.classList.toggle('active');
+    };
+
+    if (menuToggle) {
+      menuToggle.addEventListener('click', toggleMenu);
+    }
+
+    return () => {
+      if (menuToggle) {
+        menuToggle.removeEventListener('click', toggleMenu);
+      }
+    };
+  }, []);
+
   return (
     <div className="App">
 
       <section class="showcase">
         <header>
-          <h2 class="logo"> Mesa MSA</h2>
+          <h2 class="logo">Mesa MSA</h2>
           <div class="toggle"></div>
         </header>
         <div>
@@ -26,6 +46,8 @@ function App() {
 
       </section>
       <div class="menu">
+
+
 
         <ul>
 
